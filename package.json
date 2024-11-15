@@ -4,10 +4,8 @@
   "description": "Test Assignment",
   "main": "cypress.config.js",
   "scripts": {
-    "cy:open": "npx cypress open",
-    "cy:run:local": "npx cypress run --env ENV=local --headed --browser chrome",
-    "clean-reports": "rm -R -f cypress/reports && mkdir cypress/reports",
-    "cy:run:local:reports": "npm run clean-reports && npm run cy:run:local"
+    "cypress:open": "npx cypress open",
+    "cypress:run:local": "npx cypress run --env ENV=local --headed --browser chrome"
   },
   "repository": {
     "type": "git",
