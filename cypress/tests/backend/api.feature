@@ -10,5 +10,5 @@ Feature: Manager Login API Flow
 
     Examples:
       | username             | password       | status | tokenExpected |
-      | manager@example.com  | password123    | 200    | true          |
-      | invalid_user@example.com | wrongpass  | 401    | false         |
+      | johndoe@test.com     | password123    | 200    | true          |
+      | invalid@test.com     | wrongpass      | 401    | false         |

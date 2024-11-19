@@ -29,7 +29,7 @@ I have implemented a Cypress Automation framework for the QA assignment project.
 
 ## Question 1 - API Test Scenarios
 * The API scenario's document is avaible under the `docs` folder which in available inside the cypress folder
-* I have also added a sample API test using Cucumber and Gharkin
+* I have also added a sample API test using Cucumber and Gharkin (I have added @skip tag to avoid the test being triggered. The test is just an example)
   * cypress/pages/backend/ - This includes BaseAPIAction and LoginAPIAction classes
   * cypress/support/step_definitions/loginAPI.steps.js - Step Definition for Login API and validations
   * cypress/support/utils/routes - Includes API routes URL
