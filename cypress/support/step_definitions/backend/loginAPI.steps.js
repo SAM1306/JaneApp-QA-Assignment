@@ -1,5 +1,5 @@
-import BaseAPIAction from '../../pages/backend/BaseAPIAction'
-import LoginAPIAction from '../../pages/backend/LoginAPIAction'
+import BaseAPIAction from '../../../pages/backend/BaseAPIAction'
+import LoginAPIAction from '../../../pages/backend/LoginAPIAction'
 
 const loginAPIAction = new LoginAPIAction()
 const baseAPIAction = new BaseAPIAction()

@@ -13,9 +13,17 @@ class BasePage {
         return cy.get(selector)
     }
 
+    getElementXpath(selector) {
+        return cy.xpath(selector)
+    }
+
     // Utility method to interact with elements using xpath
     findElement(selector) {
         return cy.contains(selector)
+    }
+
+    findElementAndClick(selector) {
+        return cy.contains(selector).click()
     }
   
     // Utility method to perform common UI actions (e.g., clicking, typing)
@@ -44,19 +52,18 @@ class BasePage {
         return cy.title().should('include', expectedTitle)
     }
 
+    assertTextInclude(element, message) {
+        return expect(element).to.include(message)
+    }
+
+    assertText(element, message) {
+        return expect(element).to.equal(message)
+    }
+
     clearText(selector) {
         return this.getElement(selector).clear()
     }
   
-    // Utility method for logging
-    log(message) {
-        return cy.log(message)
-    }
-
-    step(message) {
-        return cy.step(message)
-    }
-
     waitFor(duration) {
         return cy.wait(duration)
     }
