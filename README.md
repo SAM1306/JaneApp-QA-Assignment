@@ -56,6 +56,6 @@ I have implemented a Cypress Automation framework for the QA assignment project.
 * The Frontend Test Cases document is avaible under the `documents` folder inside `docs` folder which in available inside the cypress folder
 * The Frontend test plan document is avaible under the `testplan` folder inside `docs` folder which in available inside the cypress folder
 * I have also added a UI functional tests using Cypress, Cucumber, Gherkin and page object modal
-  * cypress/pages/frontend/ - This includes BasePage and LoginPage classes
-  * cypress/support/step_definitions/loginUI.steps.js - Step Definition for Login UI and validations
+  * cypress/pages/frontend/ - This includes BasePage and other page classes
+  * cypress/support/step_definitions/frontend/ - Step Definition for UI Pages and validations
   * cypress/tests/frontend/ - This includes UI test feature file

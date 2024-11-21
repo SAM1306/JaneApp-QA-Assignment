@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file.
 - API Scenario Test plan
 - Merging Strategy document and Test plan
 
-## [Unreleased]
+## [Released] [Date: 11/20]
 - UI Test plan and Test Cases
-_ UI Automation test and sample framework
+-  UI Automation test and sample framework
+
+## [Released] [Date: 11/21]
+- UI Test plan and Test Cases for all Scenarios
+-  UI Automation tests with automation frameworkd
