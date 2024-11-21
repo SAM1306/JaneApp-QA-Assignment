@@ -1,15 +1,15 @@
 const ROUTES = {
     // login: For a valid manager
-    login: '/login',
+    loginURL: '/login',
     
     // users: For all users
-    users: '/users',
+    usersURL: '/users',
 
     // user: For a user by username
-    userByUsername: (username) => `/users?name=${username}`,
+    userByUsernameURL: (username) => `/users?name=${username}`,
 
     // userID: For a user by ID
-    userByID: (id) => `/users/${id}`,
+    userByIDURL: (id) => `/users/${id}`,
 
     // configurations: For all configurations for user 
     configurationsByID: (id) => `/users/${id}/configurations`
