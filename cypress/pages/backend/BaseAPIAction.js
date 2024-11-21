@@ -1,6 +1,7 @@
 class BaseAPIAction {
+
     // Utility method to send HTTP requests
-    static sendRequest(method, url, headers, body = {}) {
+    sendRequest(method, url, headers, body = {}) {
         return cy.api({
         method,
         url,
@@ -10,7 +11,7 @@ class BaseAPIAction {
         })
     }
 
-    static validateAPIResponseStatusCode(response, expectedStatusCode) {
+    validateAPIResponseStatusCode(response, expectedStatusCode) {
         try {
             expect(response.status).to.eq(expectedStatusCode)
         } catch (error) {
@@ -18,7 +19,7 @@ class BaseAPIAction {
         }
     }
 
-    static validateResponseToHaveProperty(response, property, message) {
+    validateResponseToHaveProperty(response, property, message) {
         try {
             expect(response).to.have.property(property)
             cy.log(`${message} - Field validation success. ${message} has ${property}`)
@@ -27,8 +28,10 @@ class BaseAPIAction {
         }
     }
 
-    static validateResponseNotToHaveProperty(response, property) {
+    validateResponseNotToHaveProperty(response, property) {
         expect(response).not.to.have.property(property)
     }
+
 }
 export default BaseAPIAction
+

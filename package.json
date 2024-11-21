@@ -5,7 +5,8 @@
   "main": "cypress.config.js",
   "scripts": {
     "cypress:open": "npx cypress open",
-    "cypress:run:local": "npx cypress run --env ENV=local --headed --browser chrome"
+    "cypress:run:local": "npx cypress run --env ENV=local --headed --browser chrome",
+    "cypress:run:local-headless": "npx cypress run --env ENV=local --headless --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
-    "@cucumber/cucumber": "^11.0.1",
+    "@cucumber/cucumber": "^11.1.0",
     "@cucumber/gherkin": "^30.0.4",
     "@faker-js/faker": "^8.4.1",
     "cypress": "^13.15.2",

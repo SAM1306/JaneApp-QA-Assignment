@@ -1,10 +1,10 @@
-import * as BaseAPIAction from './BaseAPIAction'
+import BaseAPIAction from './BaseAPIAction'
+import ROUTES from '../../support/utils/routes'
 
 class LoginAPIAction extends BaseAPIAction {
-    static login(endpoint, credentials) {
-        return this.sendRequest('POST', endpoint, {
-            'Content-Type': 'application/json',
-        }, credentials)
+    login(username, password) {
+        const payload = { username, password }
+        return this.sendRequest('POST', `${ROUTES.loginURL}`, { 'Content-Type': 'application/json'}, payload)
     }
 }
 export default LoginAPIAction
