@@ -24,7 +24,7 @@ I have implemented a Cypress Automation framework for the QA assignment project.
   * `npm run cypress:run:local` - Run all tests inside tests folder in chrome browser
   * `cypress:run:local-headless` - Run all tests inside tests folder in headless chrome browser
     - After the test executed is completed. The mochawesome report are available inside the report folder
-    - Check the latest html report
+    - Check the latest html report - Copy report path and paste in browser
 
 ## Framework Structure ⚡
 - The automation framework is developed using Page Object modal design pattern
